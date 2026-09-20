@@ -13,6 +13,13 @@
 html { scroll-behavior: smooth; }
 body { margin: 0; background: var(--navy); color: var(--ink); font-family: "Space Grotesk", sans-serif; line-height: 1.65; }
 a { color: inherit; }
+.video-frame iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  border: 0;
+}
 .page-shell { width: min(1100px, calc(100% - 9vw)); margin: 0 auto; }
 .site-nav { position: sticky; top: 0; z-index: 20; background: rgba(6, 21, 44, .96); border-bottom: 1px solid var(--line); backdrop-filter: blur(12px); }
 .nav-inner { min-height: 68px; display: flex; align-items: center; justify-content: center; gap: 30px; }
