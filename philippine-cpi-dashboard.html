@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Philippine CPI Dashboard project by Lorenzo Miguel Bo">
+  <title>Philippine CPI Dashboard | Lorenzo Miguel Bo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project-page.css">
+</head>
+<body class="project-page">
+  <nav class="site-nav project-nav" aria-label="Main navigation">
+    <div class="page-shell nav-inner">
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#what-i-do">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="project-hero">
+      <div class="page-shell">
+        <a class="back-link" href="index.html#portfolio">&#8592; Back to portfolio</a>
+        <h1>Philippine CPI Dashboard</h1>
+        <p class="project-hero-lede">Tracing inflation from the national headline figure to the commodities, regions, and global forces behind it.</p>
+      </div>
+    </header>
+
+    <section class="project-section summary-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">Summary</p>
+        <h2>A clearer view of what moves prices.</h2>
+        <div class="video-frame">
+          <video controls preload="metadata" poster="Philippine CPI Dashboard/Overview Page.png">
+            <source src="Philippine CPI Dashboard/Philippine CPI Dashboard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>This dashboard presents a comprehensive analysis of the Philippine Consumer Price Index (CPI) from 2018 to 2026, built on official data from the Philippine Statistics Authority (PSA). Across five report pages, it tracks national inflation trends, breaks down price movements by commodity group and region, and identifies the specific categories driving headline inflation through weighted contribution analysis. The final page extends the analysis further, using regression modeling to quantify the relationship between global Brent crude oil prices and Philippine inflation — both nationally and across individual commodity categories — revealing a clear transmission pattern from fuel costs through transport, utilities, and food distribution. The underlying data pipeline was built on a custom SQLite star schema, with all measures validated against PSA's published figures to ensure accuracy throughout.</p>
+      </div>
+    </section>
+
+    <section class="project-section problem-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">The question</p>
+        <h2>Problem Statement</h2>
+        <p>Inflation is often reported as a single national percentage, but that number obscures where price pressure is actually coming from and who it affects most. Consumers, policymakers, and businesses need to know more than "prices rose 6.2% this month" — they need to know which goods and services are driving that figure, whether some regions are experiencing sharper price increases than others, and what external forces, like global oil prices, might be fueling the trend. This dashboard addresses that gap by decomposing the Philippines' headline CPI into its underlying components: commodity-level price movements, regional disparities, and the weighted contribution of each category to overall inflation. It further tests a specific, common explanation for inflation shocks — rising global oil prices — by statistically measuring how much of the Philippines' recent inflation can actually be attributed to oil, and how that effect ripples through transport, utilities, and food costs rather than staying confined to fuel purchases alone.</p>
+      </div>
+    </section>
+
+    <section class="project-section features-section">
+      <div class="page-shell">
+        <p class="eyebrow">Inside the report</p>
+        <h2>Page Features</h2>
+        <div class="feature-list">
+          <article class="feature-item"><div class="feature-copy"><h3>Overview</h3><p>This page presents the national headline story at a glance: the latest CPI value, current inflation rate, and how purchasing power has eroded since the 2018 base year. Three dynamic insight cards automatically surface which commodity has moved the most since 2018, which category currently has the highest inflation rate, and how much value the peso has lost overall — answering the question, "where does the Philippines stand right now, and how did it get there?"</p></div><figure class="feature-preview"><img src="Philippine CPI Dashboard/Overview Page.png" alt="Philippine CPI Dashboard overview page"><figcaption>Overview</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>Commodity Analysis</h3><p>This page lets users explore individual commodity groups in depth, comparing their CPI trends and inflation rates against each other and against the national average. A CPI-vs-Inflation scatter plot reveals which categories combine high price levels with high current inflation, while interactive insight cards respond directly to whichever commodity a user selects — answering "how does this specific category behave, and how does it compare to the rest of the basket?"</p></div><figure class="feature-preview"><img src="Philippine CPI Dashboard/Commodity Page.png" alt="Philippine CPI Dashboard commodity analysis page"><figcaption>Commodity Analysis</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>Regional</h3><p>This page compares inflation and CPI across the Philippines' 18 regions through a map, ranking chart, trend lines, and a region-by-commodity heatmap. Clicking any region surfaces its rank and gap from the national average, answering "which parts of the country are experiencing the sharpest price increases, and in which commodity categories?"</p></div><figure class="feature-preview"><img src="Philippine CPI Dashboard/Regional Page.png" alt="Philippine CPI Dashboard regional analysis page"><figcaption>Regional</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>Inflation Drivers</h3><p>This page moves beyond raw inflation rates to show what's actually driving the headline number, using basket-weighted contribution rather than rate alone. It reveals that a category with a modest inflation rate can still be the biggest overall driver if it makes up a large share of typical spending — answering "what's really responsible for the number everyone sees, once you account for how much people actually buy of each thing?"</p></div><figure class="feature-preview"><img src="Philippine CPI Dashboard/Inflation Page.png" alt="Philippine CPI Dashboard inflation drivers page"><figcaption>Inflation Drivers</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>Statistical Analysis</h3><p>This page tests whether global oil prices can statistically explain Philippine inflation, using a lagged regression model validated against official PSA figures. It quantifies the relationship both nationally and per commodity, reveals a clear transmission pattern from fuel to transport to broader consumer prices, and provides forecast scenarios under different oil price levels — answering "how much of Philippine inflation can be traced back to global oil prices, and what might happen if oil moves in the future?"</p></div><figure class="feature-preview"><img src="Philippine CPI Dashboard/Statistical Analysis Page.png" alt="Philippine CPI Dashboard statistical analysis page"><figcaption>Statistical Analysis</figcaption></figure></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section approach-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">Methodology</p>
+        <h2>Statistical Approach</h2>
+        <p>The regression analysis on this page uses Ordinary Least Squares (OLS) to test whether global Brent crude oil prices can statistically explain movements in Philippine inflation. Because oil price changes take time to filter through supply chains before reaching consumers, the model uses a one-month lag — comparing this month's inflation against the prior month's oil price — rather than assuming an instantaneous effect. An initial two-predictor model also tested the PHP/USD exchange rate alongside oil price, but the exchange rate showed no statistically significant independent effect (p = 0.232) once oil was included, likely due to the two variables moving together; it was dropped in favor of a cleaner, single-predictor model without meaningfully reducing explanatory power. The final national model was then applied separately to each of the 13 major commodity groups, producing an individual coefficient, p-value, and R² for each — allowing a direct comparison of which categories respond most strongly to oil price changes. To validate the approach, the model's independently-computed year-over-year inflation figures were cross-checked against PSA's own officially published inflation rates and found to closely match, confirming the underlying calculations were methodologically sound before drawing conclusions from the regression results.</p>
+        <p>Building on the fitted national model, the dashboard also generates forecast scenarios to illustrate how inflation might respond under different oil price conditions. Rather than presenting a single, falsely precise prediction, each scenario includes a 95% prediction interval — the range within which the actual inflation rate could plausibly fall, given the roughly 60% of month-to-month variation the model does not explain (R² = 0.40). This interval is calculated as a genuine prediction interval, not a narrower confidence interval, since the goal is to estimate the plausible range for a single future observation rather than the average long-term relationship. Notably, the width of this interval remains roughly constant (approximately 6 percentage points) across all tested scenarios, indicating that the model's precision does not degrade meaningfully even at more extreme oil price levels within the range of historical data observed.</p>
+      </div>
+    </section>
+
+    <section class="project-section tools-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">The build</p>
+        <h2>Tools &amp; Technologies</h2>
+        <div class="tools-table-wrap">
+          <table class="tools-table">
+            <thead><tr><th scope="col">Tool</th><th scope="col">Usage</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Power BI Desktop</th><td>Dashboard design, 5-page report layout, relationships, slicers, and interactivity</td></tr>
+              <tr><th scope="row">DAX</th><td>KPI measures, YoY/MoM inflation calculations, headline national overrides, dynamic text insights</td></tr>
+              <tr><th scope="row">Power Query (M)</th><td>Data cleaning, Code/Label splitting, Commodity Level derivation, GeoSortOrder</td></tr>
+              <tr><th scope="row">SQLite (DB Browser)</th><td>Star schema database &mdash; Dim_Date, Dim_Geolocation, Dim_Commodity, Fact tables</td></tr>
+              <tr><th scope="row">ODBC</th><td>Connected the SQLite database to Power BI Desktop</td></tr>
+              <tr><th scope="row">Excel</th><td>Initial data cleaning and encoding correction pass on raw PSA source files</td></tr>
+              <tr><th scope="row">Python (pandas, statsmodels)</th><td>OLS regression &mdash; national and per-commodity oil-inflation models, forecast scenarios</td></tr>
+              <tr><th scope="row">Python (matplotlib)</th><td>Rendered regression output as visual tables/summaries</td></tr>
+              <tr><th scope="row">VS Code (Jupyter)</th><td>Independent, reproducible environment for running and documenting the regression analysis</td></tr>
+              <tr><th scope="row">TypeScript / LESS (pbiviz CLI)</th><td>Built a custom Date Range Slicer visual &mdash; mimics the native "Between" slicer with Daily/Monthly/Yearly granularity modes</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section sources-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">Reference data</p>
+        <h2>Data Sources</h2>
+        <div class="tools-table-wrap">
+          <table class="tools-table sources-table">
+            <thead><tr><th scope="col">Source</th><th scope="col">Data</th><th scope="col">Link</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Philippine Statistics Authority (PSA)</th><td>CP22 &mdash; Consumer Price Index, CP23 &mdash; Inflation Rate, CP24 &mdash; Purchasing Power of the Peso, CP25 &mdash; Commodity Weights</td><td><a href="https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2M__PI__CPI__2018NEW/0012M4ACP22.px/?rxid=41a57bf9-caa6-46d1-b79e-eedad1fa1cd8" target="_blank" rel="noopener noreferrer">CP22</a><br><a href="https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2M__PI__CPI__2018NEW/0012M4ACP23.px/?rxid=41a57bf9-caa6-46d1-b79e-eedad1fa1cd8" target="_blank" rel="noopener noreferrer">CP23</a><br><a href="https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2M__PI__CPI__2018NEW/0012M4ACP24.px/?rxid=41a57bf9-caa6-46d1-b79e-eedad1fa1cd8" target="_blank" rel="noopener noreferrer">CP24</a><br><a href="https://openstat.psa.gov.ph/PXWeb/pxweb/en/DB/DB__2M__PI__CPI__2018NEW/0012M4ACP25.px/?rxid=41a57bf9-caa6-46d1-b79e-eedad1fa1cd8" target="_blank" rel="noopener noreferrer">CP25</a></td></tr>
+              <tr><th scope="row">FRED (Federal Reserve Economic Data)</th><td>Global Brent crude oil price (POILBREUSDM)</td><td><a href="https://fred.stlouisfed.org/series/POILBREUSDM" target="_blank" rel="noopener noreferrer">POILBREUSDM</a></td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section live-dashboard-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">Interactive report</p>
+        <h2>Live Dashboard</h2>
+        <div class="dashboard-embed">
+          <iframe title="Philippine CPI Dashboard" src="https://app.powerbi.com/view?r=eyJrIjoiOWQwOGNiZDgtZjIyOC00MzkwLWFhNDMtZGM3M2ZkYzIyZDY0IiwidCI6ImMwMzhkODA2LWJkMGMtNDVhMS05OWRjLTAxZDkyMjI1N2Q3MSIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="page-shell contact-grid">
+        <div class="contact-intro"><h2>Let's make something useful.</h2><p>Have a dataset, dashboard, or business question that needs a clearer answer?</p><ul class="contact-services"><li>Data analysis and reporting</li><li>Power BI and Excel dashboards</li><li>Cleaning, automation, and SQL</li></ul><a class="button" href="mailto:bolorenzomiguel@gmail.comm">Send me an email <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="contact-details"><div><h3><span class="contact-icon" aria-hidden="true">@</span>Email</h3><a href="mailto:bolorenzomiguel@gmail.comm">bolorenzomiguel@gmail.comm</a></div><div><h3><span class="contact-icon" aria-hidden="true">in</span>LinkedIn</h3><a href="https://www.linkedin.com/in/lorenzobo/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/lorenzobo</a></div><div><h3><span class="contact-icon" aria-hidden="true">&#9742;</span>Contact number</h3><a href="tel:+639761298676">+63 976 129 8676</a></div><div><h3><span class="contact-icon" aria-hidden="true">&#8962;</span>Based in</h3><p>Manila, Philippines</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="page-shell"><p>&copy; 2026 Lorenzo Miguel Bo. Built with curiosity.</p></div></footer>
+</body>
+</html>

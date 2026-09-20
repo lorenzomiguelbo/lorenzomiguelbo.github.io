@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Commercial Insurance Dashboard - Excel project by Lorenzo Miguel Bo">
+  <title>Commercial Insurance Dashboard - Excel | Lorenzo Miguel Bo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project-page.css">
+</head>
+<body class="project-page">
+  <nav class="site-nav project-nav" aria-label="Main navigation">
+    <div class="page-shell nav-inner">
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#what-i-do">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="project-hero">
+      <div class="page-shell">
+        <a class="back-link" href="index.html#portfolio">&#8592; Back to portfolio</a>
+        <h1>Commercial Insurance Dashboard</h1>
+        <p class="project-platform">Excel</p>
+        <p class="project-hero-lede">An automated, decision-ready view of profitability, competitiveness, and retention built in Excel.</p>
+      </div>
+    </header>
+
+    <section class="project-section summary-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">Summary</p>
+        <h2>One dashboard, four underwriting questions.</h2>
+        <div class="video-frame">
+          <video controls preload="metadata" poster="Commercial Insurance Dashboard - Excel/Overview Page.png">
+            <source src="Commercial Insurance Dashboard - Excel/Commercial Insurance Dashboard - Excel.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>This dashboard analyzes 2025 commercial insurance performance for a Moving &amp; Storage MGA, with 2024 comparisons where relevant, across Package (PKG) and Workers' Compensation (WC) lines of business. It brings together premium, loss, quote, sold, and renewal data to evaluate portfolio health across roughly 1,000 renewal accounts, 154 brokers, and 48 states.</p>
+        <p>The four-page report turns Excel into a more practical underwriting tool: automated refresh, alert-driven KPIs, linked navigation, interactive slicers, and filter-aware narrative text help users move from a headline result to the broker, state, coverage type, line of business, or underwriter behind it.</p>
+      </div>
+    </section>
+
+    <section class="project-section problem-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">The question</p>
+        <h2>Can Excel deliver a decision-grade underwriting dashboard?</h2>
+        <p>Many MGA and carrier teams rely on Excel as their primary, and often only, business intelligence tool. While modern BI platforms offer more scalable analytics, stakeholders may already know Excel and have established workflows there. This project was built for that reality: it delivers interactive decision support without requiring a new platform.</p>
+        <p>The result uses PivotTables, Power Query, DAX measures, and VBA automation to address four questions: Is the book performing overall, and where should attention go? Where is the book losing money? How effectively are quotes converting to bound business? Are we keeping the business we have already won?</p>
+      </div>
+    </section>
+
+    <section class="project-section features-section">
+      <div class="page-shell">
+        <p class="eyebrow">Inside the dashboard</p>
+        <h2>Page Features</h2>
+        <div class="feature-list">
+          <article class="feature-item"><div class="feature-copy"><h3>Overview</h3><p>The executive page combines total book summary, monthly premium trend, premium by coverage type and line of business, top brokers and states by premium, performance alert indicators, and an auto-generated executive insights panel.</p></div><figure class="feature-preview"><img src="Commercial Insurance Dashboard - Excel/Overview Page.png" alt="Commercial Insurance Excel dashboard overview page"><figcaption>Overview</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>Loss Ratio Analysis</h3><p>This page shows loss ratio and large loss ratio by month, coverage type, and line of business, alongside broker and state rankings and a claim count and severity breakdown of attritional versus large losses. The comparison helps separate frequency issues from a few large claims.</p></div><figure class="feature-preview"><img src="Commercial Insurance Dashboard - Excel/Loss Ratio Analysis Page.png" alt="Commercial Insurance Excel dashboard loss ratio analysis page"><figcaption>Loss Ratio Analysis</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>Hit Ratio Analysis</h3><p>The competitiveness page compares quoted and sold premium and lines, then ranks hit ratio by broker, underwriter, coverage type, and state. Lost-account reasons and the Sold / Quoted, Not Written, and Declined funnel show where opportunities are being won or lost.</p></div><figure class="feature-preview"><img src="Commercial Insurance Dashboard - Excel/Hit Ratio Analysis Page.png" alt="Commercial Insurance Excel dashboard hit ratio analysis page"><figcaption>Hit Ratio Analysis</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>Retention Analysis</h3><p>The retention page compares premium and account retention overall and monthly, then breaks results down by broker, state, coverage type, and line of business. Filter-aware narrative insights explain where retention is strongest and where meaningful premium leakage is concentrated.</p></div><figure class="feature-preview"><img src="Commercial Insurance Dashboard - Excel/Retention Analysis Page.png" alt="Commercial Insurance Excel dashboard retention analysis page"><figcaption>Retention Analysis</figcaption></figure></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section approach-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">Methodology</p>
+        <h2>Automation inside a familiar tool.</h2>
+        <p>Power Query handles data transformation and cleaning, while Power Pivot and DAX provide the KPI calculations, loss and retention measures, year-over-year comparisons, and alert logic. PivotTables feed the charts, tables, and linked shapes throughout the report.</p>
+        <p>VBA automation refreshes the dashboard, applies performance alert styling, switches chart views, and generates filter-driven insight text. Slicers connect month, broker, state, coverage type, and underwriter selections across the reporting pages.</p>
+      </div>
+    </section>
+
+    <section class="project-section tools-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">The build</p>
+        <h2>Tools &amp; Technologies</h2>
+        <div class="tools-table-wrap">
+          <table class="tools-table">
+            <thead><tr><th scope="col">Tool</th><th scope="col">Usage</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Excel</th><td>Dashboard design, page layout, KPI cards, navigation, and report presentation</td></tr>
+              <tr><th scope="row">Power Query</th><td>Data transformation, cleaning, and star-schema modeling</td></tr>
+              <tr><th scope="row">Power Pivot / DAX</th><td>KPI calculations, loss ratio and retention measures, and year-over-year comparisons</td></tr>
+              <tr><th scope="row">PivotTables</th><td>Underlying data aggregation feeding charts, tables, and linked shapes</td></tr>
+              <tr><th scope="row">Native Excel Charts</th><td>Trend lines, combo charts, and filter-driven category breakdowns</td></tr>
+              <tr><th scope="row">VBA</th><td>Dashboard automation, dynamic zoom, performance alert lights, slicer-aware chart switching, and filter-driven insight text</td></tr>
+              <tr><th scope="row">Slicers</th><td>Cross-page filtering by month, broker, state, coverage type, and underwriter</td></tr>
+              <tr><th scope="row">Shape TextLink</th><td>Live KPI values linked directly into pivot tooltips</td></tr>
+              <tr><th scope="row">SQL</th><td>Policy data queried and retrieved from a Microsoft SQL Server database integrated into the agency management system</td></tr>
+              <tr><th scope="row">Data Anonymization</th><td>Identifying fields replaced with fictional values for portfolio use</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section sources-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">Data disclosure</p>
+        <h2>Built for demonstration, grounded in the book.</h2>
+        <p>To protect confidentiality, all personally and operationally identifiable information from the original dataset was anonymized before use. Insured names, underwriter names, broker names, policy IDs, claim IDs, and other identifying fields were replaced with fictional values. Financial and analytical figures, premium, loss, and other monetary amounts were preserved as-is, so the relationships and performance patterns remain consistent with the source structure while protecting sensitive business information.</p>
+      </div>
+    </section>
+
+    <section class="project-section tools-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">Download the workbook</p>
+        <h2>Explore the Excel Dashboard</h2>
+        <p>Download the portfolio version of the commercial insurance dashboard to explore its worksheets, calculations, interactive slicers, and automated reporting features in Excel.</p>
+        <a class="button" href="Commercial Insurance Dashboard - Excel/Project - Commercial Insurance Dashboard - Excel.xlsm" download>Download Excel dashboard <span aria-hidden="true">&#8595;</span></a>
+      </div>
+    </section>
+
+    <section class="project-section features-section">
+      <div class="page-shell project-content">
+        <h2>Glossary</h2>
+        <div class="tools-table-wrap">
+          <table class="tools-table">
+            <thead><tr><th scope="col">Term</th><th scope="col">Definition</th><th scope="col">How it's calculated</th><th scope="col">How to interpret</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Generated Premium</th><td>Premium from policies successfully bound/written.</td><td>Sum of generated/bound premium</td><td>Higher generally indicates greater premium production.</td></tr>
+              <tr><th scope="row">Quoted</th><td>Number of opportunities that received a quote.</td><td>Not Written + Sold</td><td>Represents the quote volume used in Hit Ratio.</td></tr>
+              <tr><th scope="row">Sold</th><td>Number of quoted opportunities that were successfully written.</td><td>Count of sold opportunities</td><td>Used as the numerator of Hit Ratio.</td></tr>
+              <tr><th scope="row">Hit Ratio</th><td>Percentage of quoted opportunities that were successfully sold.</td><td>Sold / Quoted</td><td>Higher is generally better.</td></tr>
+              <tr><th scope="row">Loss Ratio</th><td>Losses relative to generated premium.</td><td>Incurred Loss / Generated Premium</td><td>Lower generally indicates better underwriting performance.</td></tr>
+              <tr><th scope="row">Premium Retention</th><td>Percentage of prior-period premium retained.</td><td>Retained Premium / Prior Premium</td><td>Higher indicates stronger premium retention.</td></tr>
+              <tr><th scope="row">Account Retention</th><td>Percentage of prior accounts retained.</td><td>Retained Accounts / Prior Accounts</td><td>Higher indicates stronger customer retention.</td></tr>
+              <tr><th scope="row">Large Loss</th><td>A loss classified as materially larger than typical attritional losses.</td><td>Based on project classification</td><td>Highlights losses with disproportionate impact.</td></tr>
+              <tr><th scope="row">Attritional Loss</th><td>More routine losses that make up the normal loss experience.</td><td>Based on project classification</td><td>Used as a comparison against large losses.</td></tr>
+              <tr><th scope="row">Alert</th><td>Performance requiring attention.</td><td>Based on KPI thresholds</td><td>Indicates performance below the defined acceptable level.</td></tr>
+              <tr><th scope="row">Monitor</th><td>Performance that warrants observation.</td><td>Based on KPI thresholds</td><td>Indicates performance between Healthy and Alert.</td></tr>
+              <tr><th scope="row">Healthy</th><td>Performance within the desired range.</td><td>Based on KPI thresholds</td><td>Indicates satisfactory performance.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="page-shell contact-grid">
+        <div class="contact-intro"><h2>Let's make something useful.</h2><p>Have a dataset, dashboard, or business question that needs a clearer answer?</p><ul class="contact-services"><li>Data analysis and reporting</li><li>Power BI and Excel dashboards</li><li>Cleaning, automation, and SQL</li></ul><a class="button" href="mailto:bolorenzomiguel@gmail.comm">Send me an email <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="contact-details"><div><h3><span class="contact-icon" aria-hidden="true">@</span>Email</h3><a href="mailto:bolorenzomiguel@gmail.comm">bolorenzomiguel@gmail.comm</a></div><div><h3><span class="contact-icon" aria-hidden="true">in</span>LinkedIn</h3><a href="https://www.linkedin.com/in/lorenzobo/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/lorenzobo</a></div><div><h3><span class="contact-icon" aria-hidden="true">&#9742;</span>Contact number</h3><a href="tel:+639761298676">+63 976 129 8676</a></div><div><h3><span class="contact-icon" aria-hidden="true">&#8962;</span>Based in</h3><p>Manila, Philippines</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="page-shell"><p>&copy; 2026 Lorenzo Miguel Bo. Built with curiosity.</p></div></footer>
+</body>
+</html>

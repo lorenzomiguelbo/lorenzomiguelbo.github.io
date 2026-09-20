@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DPWH Flood Control Project Dashboard by Lorenzo Miguel Bo">
+  <title>DPWH Flood Control Project Dashboard | Lorenzo Miguel Bo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="project-page.css">
+</head>
+<body class="project-page">
+  <nav class="site-nav project-nav" aria-label="Main navigation">
+    <div class="page-shell nav-inner">
+      <div class="nav-links">
+        <a href="index.html#home">Home</a>
+        <a href="index.html#about">About</a>
+        <a href="index.html#what-i-do">Services</a>
+        <a href="index.html#portfolio">Portfolio</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <header class="project-hero">
+      <div class="page-shell">
+        <a class="back-link" href="index.html#portfolio">&#8592; Back to portfolio</a>
+        <h1>DPWH Flood Control Project Dashboard</h1>
+        <p class="project-hero-lede">A portfolio-scale view of flood control progress, budget utilization, risk reduction, timelines, and contractor performance.</p>
+      </div>
+    </header>
+
+    <section class="project-section summary-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">Summary</p>
+        <h2>One connected view of a flood control portfolio.</h2>
+        <div class="video-frame">
+          <video controls preload="metadata" poster="DPWH Flood Control Project Dashboard/Overview Page.png">
+            <source src="DPWH Flood Control Project Dashboard/DPWH Flood Control Project Dashboard.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <p>This dashboard provides an executive-level view of a simulated DPWH Flood Control Project portfolio, covering 320+ projects nationwide. Built as the final requirement for the Power BI Training workshop with Excelhelpline Analytics PH using a synthetic dataset, it consolidates project progress, budget utilization, flood risk reduction, contractor performance, and scheduling into a single interactive report spanning seven pages.</p>
+        <p>Decision-makers can filter the full dashboard by Project Status, Location, and Contractor to surface the metrics that matter most, from budget efficiency and completion rates to which regions carry the highest flood risk and which contractors are delivering results. The result is a live, at-a-glance tool for tracking whether public infrastructure spending is translating into measurable flood mitigation outcomes.</p>
+      </div>
+    </section>
+
+    <section class="project-section problem-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">Problem Statement</p>
+        <h2>Can one dashboard make a 320+ project portfolio easier to govern?</h2>
+        <p>Government infrastructure agencies like DPWH often manage hundreds of concurrent projects, with data on budgets, timelines, contractor performance, and risk levels scattered across disconnected spreadsheets. This fragmentation makes it difficult for stakeholders to answer basic but critical questions in real time: Which projects are behind schedule? Where is the budget being over- or under-utilized? Which regions remain at high risk despite completed interventions? How are individual contractors performing across their portfolios?</p>
+        <p>This project simulates that scenario using a synthetic dataset modeled on a DPWH Flood Control Project portfolio (320+ projects), built as the final requirement for a Power BI Training workshop with Excelhelpline Analytics PH. The goal was to design an interactive Power BI dashboard that unifies project, budget, timeline, flood risk, and contractor data into a single connected data model, enabling stakeholders to filter, drill down, and monitor project performance across a full portfolio in real time, rather than relying on static, siloed reports.</p>
+        <p><strong>Note: built on a synthetic dataset for training purposes.</strong></p>
+      </div>
+    </section>
+
+    <section class="project-section features-section">
+      <div class="page-shell">
+        <p class="eyebrow">Inside the report</p>
+        <h2>Page-by-Page Guide</h2>
+        <div class="feature-list">
+          <article class="feature-item"><div class="feature-copy"><h3>1. Overview</h3><p><em>What it answers: "What does the entire portfolio look like at a glance?"</em><br>Shows headline totals: Total Projects, Total Allocated Budget, and High Risk Project Sites, alongside bar charts breaking down project count and budget by Region and by Contractor. Start here to get oriented before drilling into any specific dimension on the following pages.</p></div><figure class="feature-preview"><img src="DPWH Flood Control Project Dashboard/Overview Page.png" alt="DPWH Flood Control Project Dashboard overview page"><figcaption>Overview</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>2. Project List</h3><p><em>What it answers: "What are all 320 projects, individually, and where do they stand?"</em><br>A searchable, filterable table listing every project with project ID, name, type, location, cost, funding source, percentage completion, start and end dates, paired with a bar chart of project count by province and a pie chart of status breakdown. This is the detail and reference page for looking up or auditing a specific project.</p></div><figure class="feature-preview"><img src="DPWH Flood Control Project Dashboard/Project List Page.png" alt="DPWH Flood Control Project Dashboard project list page"><figcaption>Project List</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>3. Budget</h3><p><em>What it answers: "Are we spending within budget, and where is the money going?"</em><br>Cards summarize Total Allocated Budget, Total Expense, and Remaining Balance, with a Budget Utilization Rate showing spend efficiency. A table breaks down allocation versus utilization per project, a bar chart compares actual expense against remaining balance per project, and a narrative Budget Insight Text Card auto-summarizes the picture as filters change. A Fiscal Year slicer lets you isolate a specific year's spending.</p></div><figure class="feature-preview"><img src="DPWH Flood Control Project Dashboard/Budget Page.png" alt="DPWH Flood Control Project Dashboard budget page"><figcaption>Budget</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>4. Timeline</h3><p><em>What it answers: "Which projects are on schedule, which are delayed, and why?"</em><br>A Gantt chart visualizes each project's actual start-to-end schedule and flags Delay Status as On Track or Delayed. A supporting table lists exact delay days per project, and a bar chart ranks the most common Reasons for Delay by average days lost, useful for spotting systemic bottlenecks such as procurement, weather, or permitting. A Timeline Insight Text card summarizes schedule health narratively.</p></div><figure class="feature-preview"><img src="DPWH Flood Control Project Dashboard/Timeline Page.png" alt="DPWH Flood Control Project Dashboard timeline page"><figcaption>Timeline</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>5. Flood Risk</h3><p><em>What it answers: "Are these projects actually reducing flood risk?"</em><br>Compares pre- versus post-project risk level per barangay or project, alongside Flood Incidents Before versus After and an Average Flood Incident Reduction Rate by region. A scatter chart cross-references rainfall intensity against post-project incidents to test whether risk reduction holds up under heavier rainfall. This is the page that most directly answers the "did this work?" question.</p></div><figure class="feature-preview"><img src="DPWH Flood Control Project Dashboard/Flood Risk Page.png" alt="DPWH Flood Control Project Dashboard flood risk page"><figcaption>Flood Risk</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>6. Contractor</h3><p><em>What it answers: "Which contractors are performing well, and who's handling what?"</em><br>A table lists each contractor's assigned region, total contract value, and performance rating, with a bar chart of projects handled per contractor and a scatter chart plotting performance rating against contract value and workload. This helps identify contractors who are over-extended versus efficient.</p></div><figure class="feature-preview"><img src="DPWH Flood Control Project Dashboard/Contractor Page.png" alt="DPWH Flood Control Project Dashboard contractor page"><figcaption>Contractor</figcaption></figure></article>
+          <article class="feature-item"><div class="feature-copy"><h3>7. KPI</h3><p><em>What it answers: "In one glance, how healthy is the whole program right now?"</em><br>The executive summary page shows Completion Rate, Risk Reduction Rate, and Budget Utilization Rate, plus a scatter chart plotting all three together by Region. A dynamic KPI Insight Text card ties it all into a single auto-generated sentence, providing the fastest way to read the state of the portfolio without opening any other page.</p></div><figure class="feature-preview"><img src="DPWH Flood Control Project Dashboard/KPI Page.png" alt="DPWH Flood Control Project Dashboard KPI page"><figcaption>KPI</figcaption></figure></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section approach-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">How to use the report</p>
+        <h2>Shared filters, connected decisions.</h2>
+        <p>Every page shares the same three slicers: Project Status, Region, and Contractor, positioned in the top-left corner. Any selection carries across pages as you navigate, keeping the context consistent from the overview through the detail pages.</p>
+        <p>The suggested flow is Overview and KPI for the two big-picture pages, then Project List, Budget, Timeline, Flood Risk, and Contractor as the detail pages for drilling into a specific concern.</p>
+      </div>
+    </section>
+
+    <section class="project-section tools-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">The build</p>
+        <h2>Tools &amp; Technologies</h2>
+        <div class="tools-table-wrap">
+          <table class="tools-table">
+            <thead><tr><th scope="col">Tool</th><th scope="col">Usage</th></tr></thead>
+            <tbody>
+              <tr><th scope="row">Power BI Desktop</th><td>Dashboard design, seven-page report layout, snowflake data model, relationships, slicers, and interactivity</td></tr>
+              <tr><th scope="row">DAX</th><td>KPI, budget, risk, timeline, and contractor measures; dynamic insight text cards; completion, utilization, and reduction rate calculations</td></tr>
+              <tr><th scope="row">Power Query (M)</th><td>Data cleaning, Barangay label cleanup, unpivoting Flood_Risk_Data into the Flood_Risk_Comparison reference table</td></tr>
+              <tr><th scope="row">Excel</th><td>Source workbook containing Project_List, Budget_Allocation, Project_Timeline, Flood_Risk_Data, Contractor_Info, and KPI_Summary sheets</td></tr>
+              <tr><th scope="row">Gantt Chart (Microsoft AppSource Visual)</th><td>Timeline page visualizing project schedules with on-track and delayed status</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="project-section sources-section">
+      <div class="page-shell project-content narrow-content">
+        <p class="eyebrow">Data disclosure</p>
+        <h2>Built for training, using synthetic data.</h2>
+        <p>This dashboard was built on a synthetic dataset for training purposes. The project portfolio, budget figures, timelines, flood risk measures, contractor information, and KPI results are simulated for demonstration and do not represent actual DPWH project records or official performance data.</p>
+      </div>
+    </section>
+
+    <section class="project-section live-dashboard-section">
+      <div class="page-shell project-content">
+        <p class="eyebrow">Interactive report</p>
+        <h2>Live Dashboard</h2>
+        <div class="dashboard-embed">
+          <iframe title="Flood Control Project - Completed" src="https://app.powerbi.com/view?r=eyJrIjoiZWUyYmUxODYtNWM3Yy00YmM4LThmMTUtNDFlZmFiMDhlYzM0IiwidCI6ImMwMzhkODA2LWJkMGMtNDVhMS05OWRjLTAxZDkyMjI1N2Q3MSIsImMiOjEwfQ%3D%3D" frameborder="0" allowfullscreen="true"></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="page-shell contact-grid">
+        <div class="contact-intro"><h2>Let's make something useful.</h2><p>Have a dataset, dashboard, or business question that needs a clearer answer?</p><ul class="contact-services"><li>Data analysis and reporting</li><li>Power BI and Excel dashboards</li><li>Cleaning, automation, and SQL</li></ul><a class="button" href="mailto:bolorenzomiguel@gmail.comm">Send me an email <span aria-hidden="true">&#8594;</span></a></div>
+        <div class="contact-details"><div><h3><span class="contact-icon" aria-hidden="true">@</span>Email</h3><a href="mailto:bolorenzomiguel@gmail.comm">bolorenzomiguel@gmail.comm</a></div><div><h3><span class="contact-icon" aria-hidden="true">in</span>LinkedIn</h3><a href="https://www.linkedin.com/in/lorenzobo/" target="_blank" rel="noopener noreferrer">www.linkedin.com/in/lorenzobo</a></div><div><h3><span class="contact-icon" aria-hidden="true">&#9742;</span>Contact number</h3><a href="tel:+639761298676">+63 976 129 8676</a></div><div><h3><span class="contact-icon" aria-hidden="true">&#8962;</span>Based in</h3><p>Manila, Philippines</p></div></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="page-shell"><p>&copy; 2026 Lorenzo Miguel Bo. Built with curiosity.</p></div></footer>
+</body>
+</html>
